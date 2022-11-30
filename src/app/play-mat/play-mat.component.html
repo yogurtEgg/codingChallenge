@@ -1,0 +1,13 @@
+<form [formGroup]="settingsForm" (ngSubmit)="onSubmit()">
+  <app-settings></app-settings>
+</form>
+
+<div *ngFor="let player from players; index as i">
+  <p>Player {{i}}</p>
+  <div class="cards">
+    <app-player-hand [cardsInHand]="player"></app-player-hand>
+  </div>
+  <div *ngIf="i == currentPlayer" class="dice">
+    <app-dice [playerNumber]="i"></app-dice>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="settings">
+  <div class="option players">
+    <label class="example-name-label">Players</label>
+    <mat-slider
+      class="example-margin"
+      [max]="10"
+      [min]="2"
+      [step]="1">
+      <input [(ngModel)]="players">
+    </mat-slider>
+    <label>{{players}}</label>
+  </div>
+
+  <div class="option cards">
+    <label class="example-name-label">Cards</label>
+    <mat-slider
+      class="example-margin"
+      [max]="4"
+      [min]="2"
+      [step]="1">
+      <input [(ngModel)]="cards">
+    </mat-slider>
+    <label>{{cards}}</label>
+  </div>
+</div>

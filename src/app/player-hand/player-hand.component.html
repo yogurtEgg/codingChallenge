@@ -1,0 +1,5 @@
+<section class="playerHand">
+  <div *ngFor="let card of cardsInHand; let i = index" class="card">
+    <app-card [color]="card"></app-card>
+  </div>
+</section>

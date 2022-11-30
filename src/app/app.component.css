@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.playMat {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 1em;
+  flex-direction: column;
+  height: 400px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
